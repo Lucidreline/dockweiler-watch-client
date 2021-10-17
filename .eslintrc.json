@@ -11,5 +11,7 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
-  "rules": {}
+  "rules": {
+    "semi": [2, "never"]
+  }
 }

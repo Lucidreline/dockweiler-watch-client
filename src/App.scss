@@ -1,0 +1,80 @@
+@import './vars.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+*::selection {
+  background: $highlightColor; /* WebKit/Blink Browsers */
+}
+*::-moz-selection {
+  background: $highlightColor; /* Gecko Browsers */
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: $normalTextColor;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 1.5rem;
+  color: $normalTextColor;
+}
+p.marg-bottom {
+  margin-bottom: 1.2rem;
+}
+h2 {
+  font-size: 4.5rem;
+}
+h3 {
+  font-size: 2.7rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.5rem;
+}
+a {
+  color: $normalTextColor;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+#margin-container {
+  width: 75%;
+  margin: auto;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $scrollBackgroundColor;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $accentColor;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
