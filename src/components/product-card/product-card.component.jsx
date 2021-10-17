@@ -7,7 +7,11 @@ const ProductCard = ({ product }) => (
     <div
       className="image"
       style={{ backgroundImage: `url(${product.imageUrl})` }}
-    />
+    >
+      <div className="name-hover">
+        <h3 className="product-name">{product.name}</h3>
+      </div>
+    </div>
     <div className="price-details">
       <span className="sale-status">
         {product.price.onSale ? 'On Sale' : 'Full Price'}
