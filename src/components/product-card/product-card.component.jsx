@@ -1,12 +1,18 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import './product-card.styles.scss'
 
-const ProductCard = () => (
+const ProductCard = ({ product }) => (
   <div className="product-card">
-    <div className="image" />
+    <div
+      className="image"
+      style={{ backgroundImage: `url(${product.imageUrl})` }}
+    />
     <div className="price-details">
-      <span className="sale-status">Full Price</span>
-      <span className="price">$50</span>
+      <span className="sale-status">
+        {product.price.onSale ? 'On Sale' : 'Full Price'}
+      </span>
+      <span className="price">${product.price.current}</span>
     </div>
   </div>
 )

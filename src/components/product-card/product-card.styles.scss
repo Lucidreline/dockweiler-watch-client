@@ -1,12 +1,12 @@
 .product-card {
-  background-color: rgb(255, 0, 191);
   width: 20rem;
   margin: 2rem 0;
 
   .image {
-    height: 15rem;
+    height: 19rem;
     width: 100%;
-    background-color: red;
+    background-size: cover;
+    background-position: 50% 65%;
   }
   .price-details {
     background-color: rgb(0, 255, 0);
