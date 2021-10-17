@@ -1,10 +1,10 @@
 /* eslint-disable react/react-in-jsx-scope */
 import './App.scss'
-import ProductCard from './components/product-card/product-card.component'
+import ProductCardList from './components/product-card-list/product-card-list.component'
 
 const App = () => (
   <div id="margin-container">
-    <ProductCard />
+    <ProductCardList />
   </div>
 )
 
